@@ -1,0 +1,27 @@
+{
+  "account": "683668078297",
+  "profile": "512-team01",
+  "region": "ap-northeast-2",
+  "cluster": "aws-eks-final-project-eks",
+  "namespace": "soldesk",
+  "url": "https://server.aws-yjeee.com",
+  "repository": "yjeee-ghub/aws-eks-final-project",
+  "loadBalancer": "aws-eks-final-project-alb",
+  "database": "aws-eks-final-project-db",
+  "project": "aws-eks-final-project",
+  "stateBucket": "aws-eks-final-project-state-683668078297-ap-northeast-2",
+  "verifyProject": "aws-eks-final-project-deploy-verify",
+  "verifyBucket": "aws-eks-final-project-verify-683668078297-ap-northeast-2",
+  "hostedZoneId": "",
+  "websiteHost": "server.aws-yjeee.com",
+  "argoHost": "argocd.aws-yjeee.com",
+  "grafanaHost": "grafana.aws-yjeee.com",
+  "domain": "aws-yjeee.com",
+  "senderEmail": "yoonjoung429@gmail.com",
+  "teamEmails": [
+    "sysysy1103@gmail.com",
+    "a39163369@gmail.com",
+    "yoonjoung429@gmail.com",
+    "akslckxk@gmail.com"
+  ]
+}

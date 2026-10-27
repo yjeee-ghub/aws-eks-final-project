@@ -1,0 +1,11 @@
+{
+  "repository": "yjeee-ghub/aws-eks-final-project",
+  "owner": "yjeee-ghub",
+  "collaborators": [
+    "yobi84-sy",
+    "yonginfra",
+    "yunjun1208"
+  ],
+  "permission": "push",
+  "requiredOtherApprovals": 1
+}
