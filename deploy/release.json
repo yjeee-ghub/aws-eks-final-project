@@ -1,5 +1,33 @@
 {
-  "images": {},
   "intent": "release",
-  "updatedServices": []
+  "updatedServices": [
+    "frontend",
+    "member",
+    "product",
+    "ordering",
+    "apigateway"
+  ],
+  "images": {
+    "frontend": {
+      "source": "b3756e35002c7bd7ab33e336e522f3f8ba7fbcbf",
+      "digest": "sha256:7805441cdf27b4a43a85d6a1c7272aa7a775de799906b4c074df7ec2a88f1c75"
+    },
+    "member": {
+      "source": "b3756e35002c7bd7ab33e336e522f3f8ba7fbcbf",
+      "digest": "sha256:3a8ee7e19a2937f0a4619190ab169d81a0851550fc116ed03075cb2330800a7b"
+    },
+    "product": {
+      "source": "b3756e35002c7bd7ab33e336e522f3f8ba7fbcbf",
+      "digest": "sha256:96c418df847a39e5037d61988660a64e60b220c123f3e9c36dc3747f5c984403"
+    },
+    "ordering": {
+      "source": "b3756e35002c7bd7ab33e336e522f3f8ba7fbcbf",
+      "digest": "sha256:14d6b29cf83ef788a26e59b916e9279d7f051cffeea95f9d5e417a35d70ec90f"
+    },
+    "apigateway": {
+      "source": "b3756e35002c7bd7ab33e336e522f3f8ba7fbcbf",
+      "digest": "sha256:3d90fd49c607a67dfe84bd0575a74b5d0281bb0c38d831e59fccfa7fd59a7ca1"
+    }
+  },
+  "runId": "40436293544"
 }
