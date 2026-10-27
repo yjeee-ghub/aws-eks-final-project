@@ -1,6 +1,6 @@
 # 다음 단계에서 GitHub Actions용 IAM 역할에 연결
 output "oidc_provider_arn" {
-  value       = aws_iam_openid_connect_provider.github.arn
+  value       = local.oidc_provider_arn
   description = "GitHub Actions 인증용 OIDC Provider ARN"
 }
 

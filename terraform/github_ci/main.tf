@@ -1,7 +1,8 @@
 # GitHub Actions가 발급한 인증 정보를 AWS에서 확인
 # AWS 액세스 키를 GitHub에 저장하지 않고 연결하는 방식
 resource "aws_iam_openid_connect_provider" "github" {
-  url = "https://token.actions.githubusercontent.com"
+  count = var.existing_oidc_provider_arn == "" ? 1 : 0
+  url   = "https://token.actions.githubusercontent.com"
 
   # AWS STS를 대상으로 발급된 인증 정보만 허용
   client_id_list = ["sts.amazonaws.com"]
@@ -9,6 +10,10 @@ resource "aws_iam_openid_connect_provider" "github" {
   tags = {
     Name = "${var.project_name}-github-oidc"
   }
+}
+
+locals {
+  oidc_provider_arn = var.existing_oidc_provider_arn != "" ? var.existing_oidc_provider_arn : aws_iam_openid_connect_provider.github[0].arn
 }
 
 # GitHub Actions가 임시 AWS 자격 증명을 받을 IAM 역할
@@ -22,7 +27,7 @@ resource "aws_iam_role" "github_actions" {
       {
         Effect = "Allow"
         Principal = {
-          Federated = aws_iam_openid_connect_provider.github.arn
+          Federated = local.oidc_provider_arn
         }
         Action = "sts:AssumeRoleWithWebIdentity"
 
