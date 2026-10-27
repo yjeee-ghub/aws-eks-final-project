@@ -1,12 +1,12 @@
 {
-  "intent": "release",
+  "intent": "rollback",
   "updatedServices": [
     "frontend"
   ],
   "images": {
     "frontend": {
-      "source": "0b90fcfa7db5ebfd7c3963294b9b53514ba481f5",
-      "digest": "sha256:e999ce1a10c750c5dc43b783d2b9ab0108396a82ed028597d59f07f2e7e93669"
+      "source": "b3756e35002c7bd7ab33e336e522f3f8ba7fbcbf",
+      "digest": "sha256:7805441cdf27b4a43a85d6a1c7272aa7a775de799906b4c074df7ec2a88f1c75"
     },
     "member": {
       "source": "b3756e35002c7bd7ab33e336e522f3f8ba7fbcbf",
@@ -25,5 +25,6 @@
       "digest": "sha256:3d90fd49c607a67dfe84bd0575a74b5d0281bb0c38d831e59fccfa7fd59a7ca1"
     }
   },
-  "runId": "40461815833"
+  "runId": "40436293544",
+  "rollbackFrom": "0b90fcfa7db5ebfd7c3963294b9b53514ba481f5"
 }
