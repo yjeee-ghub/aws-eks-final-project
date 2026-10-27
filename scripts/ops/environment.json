@@ -12,7 +12,7 @@
   "stateBucket": "aws-eks-final-project-state-683668078297-ap-northeast-2",
   "verifyProject": "aws-eks-final-project-deploy-verify",
   "verifyBucket": "aws-eks-final-project-verify-683668078297-ap-northeast-2",
-  "hostedZoneId": "",
+  "hostedZoneId": "Z09189231F4P37RQNMFR8",
   "websiteHost": "server.aws-yjeee.com",
   "argoHost": "argocd.aws-yjeee.com",
   "grafanaHost": "grafana.aws-yjeee.com",

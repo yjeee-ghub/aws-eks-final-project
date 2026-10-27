@@ -10,7 +10,7 @@ resources:
   - ordering/k8s/depl_svc.yml
   - apigateway/k8s/depl_svc.yml
   - frontend/k8s/depl_svc.yml
-  # 13단계의 ACM·도메인 준비 후 Ingress를 추가합니다.
+  - k8s/k8s-services/ingress.yml
   # 초기 자동 확장 실습은 회원 서비스 하나로 진행
   - k8s/k8s-hpa/member-hpa.yml
   - ops/db-credential-sync.yml
