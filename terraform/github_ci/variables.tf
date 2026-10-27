@@ -1,4 +1,10 @@
 # 리소스 이름에 사용할 프로젝트 이름
+variable "existing_oidc_provider_arn" {
+  type        = string
+  default     = ""
+  description = "기존 계정 공용 GitHub OIDC 공급자 ARN. 지정하면 생성·수정·삭제하지 않고 참조합니다."
+}
+
 variable "project_name" {
   type = string
 }
