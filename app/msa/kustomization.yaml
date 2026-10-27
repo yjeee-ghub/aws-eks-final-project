@@ -36,6 +36,6 @@ images:
     newTag: b3756e35002c7bd7ab33e336e522f3f8ba7fbcbf
     digest: sha256:3d90fd49c607a67dfe84bd0575a74b5d0281bb0c38d831e59fccfa7fd59a7ca1
   - name: 683668078297.dkr.ecr.ap-northeast-2.amazonaws.com/frontend-service
-    newTag: b3756e35002c7bd7ab33e336e522f3f8ba7fbcbf
-    digest: sha256:7805441cdf27b4a43a85d6a1c7272aa7a775de799906b4c074df7ec2a88f1c75
+    newTag: 656b733ab58c05faac0e71ddc6999ac975752efc
+    digest: sha256:b76160a5904509ce0bbefa06d350704ec3b69953074547634115a1236d15e8c0
 
